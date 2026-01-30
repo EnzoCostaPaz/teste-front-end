@@ -1,12 +1,13 @@
 import { type FunctionComponent } from 'react';
 import styles from './Banner.module.scss';
+import FundoPromocao from '../../assets/FundoPromocao.png'; //importando diretamente o fundo
 
 const Banner: FunctionComponent = () => {
     return (
         <>
             <div className={styles.DivPromocao}>
-                <div className={styles.ImagemFundo}>
-                    <div className={styles.ContentPromocao}>
+                <div className={styles.ImagemFundo} style={{ backgroundImage : `url(${FundoPromocao})`}}>
+                    <div className={styles.ContentPromocao} >
                         <div className={styles.TitlePromocao}>
                             <span>Venha conhecer nossas promoções</span>
                         </div>
