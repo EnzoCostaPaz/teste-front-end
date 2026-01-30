@@ -8,7 +8,9 @@ function App() {
       <Header />
       <Banner />
       <OpcaoProduto />
-      <ProdutosTecnologia quantidade={4} />
+
+      {/* exibe apenas 4 de todos dados do JSON para ficar varios celulares na tela */}
+      <ProdutosTecnologia quantidade={4} /> 
       <Parceiros />
 
       <ProdutosTecnologia
