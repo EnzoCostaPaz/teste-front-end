@@ -1,0 +1,248 @@
+.ContainerFooter {
+    width: 100%;
+
+    footer {
+        width: 100%;
+        padding: 0;
+    }
+
+    .NewsletterArea {
+     background-color: #271C47;
+        width: 100%; 
+        height: auto; 
+        padding: 40px 0; 
+        
+        display: flex;
+        justify-content: center;
+
+    
+    }
+
+    .NewsletterContent {
+        width: 100%;
+        max-width: 1280px; 
+        padding: 0 1rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .LadoEsquerdo {
+        max-width: 500px;
+
+        .InscreverTitle {
+            font-family: 'Poppins';
+            font-size: 30px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+        }
+
+        .InscreverDescription {
+            font-family: 'Poppins';
+            font-size: 14px;
+            color: #FFFFFF;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+    }
+
+    .LadoDireito {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .FormRow {
+            display: flex;
+            gap: 15px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+
+        .InputTexto {
+            width: 233px;
+            height: 42px;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            padding: 0 20px;
+            font-family: 'Poppins';
+            font-size: 14px;
+            outline: none;
+
+            &::placeholder {
+                color: #C0C0C0;
+            }
+
+            &:focus {
+                border-color: #F7CA11;
+            }
+        }
+
+        .BotaoInscrever {
+            width: 157px;
+            height: 48px;
+            background-color: #F7CA11;
+            color: #271C47;
+            font-weight: 700;
+            font-family: 'Poppins';
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: filter 0.2s;
+
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+
+        .TermsRow {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            font-family: 'Poppins';
+            font-size: 14px;
+            font-weight: 300;
+
+            input[type="checkbox"] {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .ContainerInformacaoFooter {
+        width: 100%;
+        background-color: #F4F4F4;
+        padding: 40px 0; 
+
+        .FooterContent {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+        }
+
+        // --- LADO ESQUERDO ---
+        .FooterLadoEsquerdo {
+            max-width: 350px; 
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            .DivImage {
+                padding-left: 60px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .DescricaoFooter {
+                padding-left: 60px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                color: #3F3F40;
+                line-height: 1.5;
+            }
+
+            .SocialIcons {
+                padding-left: 60px;
+                overflow: hidden;
+                display: flex;
+                gap: 26px; 
+                margin-top: 10px;
+
+                .Icon {
+                    cursor: pointer;
+                    transition: transform 0.2s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .LinhaVertical {
+            width: 1px;
+            min-height: 200px; 
+            height: auto; 
+            background-color: #DEDEDE; 
+            margin: 0 90px; 
+        }
+
+        .FooterLadoDireito {
+            flex: 1; 
+            display: flex;
+            justify-content: space-between; 
+            gap: 20px;
+
+            .ColunaInstitucional,
+            .ColunaAjuda,
+            .ColunaTermos {
+                padding-right: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .Title {
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 700; 
+                color: #3F3F40;
+            }
+
+            .ListaOption {
+                list-style: none; 
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                li {
+                    font-family: 'Poppins', sans-serif; 
+                    font-size: 14px;
+                    color: #3F3F40;
+                    font-weight: 300;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .UseTerms {
+        width: 100%;
+        height: 46.89px;
+        padding: 20px 35px;
+        background-color: #FFFFFF; 
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-family: 'Poppins';
+            font-weight: lighter;
+            font-size: 13px;
+            color: #3F3F40;
+            text-align: center;
+        }
+    }
+
+}

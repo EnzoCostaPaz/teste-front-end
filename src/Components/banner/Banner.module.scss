@@ -1,0 +1,112 @@
+.DivPromocao {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ImagemFundo {
+    position: relative;
+
+    width: 100%;
+    height: 390px;
+
+
+    background-image: url('./imgs/fundo/FundoPromocao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+
+}
+
+.ImagemFundo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 65%;
+  
+    height: 390px;
+
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.65) 40%,
+            rgba(0, 0, 0, 0.3) 70%,
+            rgba(0, 0, 0, 0) 100%);
+
+    z-index: 1;
+}
+
+.TitlePromocao,
+.SubtitlePromocao,
+.ButtonPromocao {
+    position: relative;
+    z-index: 2;
+}
+
+.TitlePromocao {
+    width: 45%;
+    height: auto;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 600;
+    word-wrap: break-word;
+    color: #FFFFFF;
+
+
+    padding-left: 65px;
+    padding-top: 60px;
+    display: flex;
+    line-height: 50px;
+
+}
+
+.TitlePromocao span {
+    overflow: hidden;
+}
+
+.SubtitlePromocao {
+    max-width: 45%;
+    height: auto;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-top: 45px;
+    padding-left: 65px;
+
+}
+
+.TextoAmarelo {
+    color: #F7CA11;
+    font-weight: 700;
+}
+
+.ButtonPromocao {
+    padding-left: 65px;
+    padding-top: 7px;
+
+    padding-left: 65px;
+    padding-top: 30px;
+
+}
+
+.ButtonPromocao button {
+    width: 206px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: none;
+
+    background-color: #F7CA11;
+    font-weight: 600;
+    color: #271C47;
+    font-family: 'Poppins';
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover{
+        filter: brightness(0.9);
+    }
+}

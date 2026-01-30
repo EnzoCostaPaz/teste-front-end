@@ -1,0 +1,71 @@
+.ParceiroContainer {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    gap: 13px;
+
+    .BlocoParceiro {
+        width: 580px;
+        height: 350px;
+
+        background-image: 
+            linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%),
+            url("../../../imgs/fundo/FundoParceiros.png");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+    }
+
+    .ParceirosTitle{
+        width: 100%;
+        height: auto;
+        font-family: 'Poppins';
+        font-size: 40px;
+        font-weight: bold;
+        color: #FFFFFF;
+
+        padding-left: 45px;
+        padding-top: 95px;
+    }
+
+    .DescricaoParceiros{
+        word-break: break-all;
+        width: 35%;
+        font-family: 'Poppins';
+        color: #FFFFFF;
+        padding-left: 43px;
+        font-size: 16px;
+        font-weight:lighter;
+    }
+
+    .ButtomParceiros{
+        padding-left: 43px;
+        padding-top: 35px;
+
+        
+    }
+    .Buttom{
+        width: 144.69px;
+        height: 48px;
+        border-radius: 6px;
+        background-color: #F7CA11;
+        color: #271C47;
+        font-size: 16px;
+        font-family: 'Poppins';
+        font-weight: bolder;
+        border: none;
+        cursor: pointer;
+
+       
+    }
+
+    .Buttom:hover{
+        filter: brightness(0.9);
+    }
+}
