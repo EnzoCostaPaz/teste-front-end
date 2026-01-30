@@ -1,4 +1,4 @@
-import { useState, type FunctionComponent } from 'react';
+import { type FunctionComponent } from 'react';
 import styles from './Banner.module.scss';
 
 const Banner: FunctionComponent = () => {

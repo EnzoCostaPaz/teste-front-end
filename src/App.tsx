@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { Header, Banner, OpcaoProduto, ProdutosTecnologia, Parceiros, Secaomarcas , Footer} from './Components';
 
 import './App.css'
