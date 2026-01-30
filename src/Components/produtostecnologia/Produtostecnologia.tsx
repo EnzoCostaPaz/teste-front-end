@@ -150,8 +150,7 @@ function ProdutosTecnologia({
                     </div>
                 ))}
             </div>
-            {/* RENDERIZAÇÃO CONDICIONAL DO MODAL */}
-            {/* Se produtoSelecionado NÃO for nulo, mostra o modal */}
+            {/* Renderização do modal, Se produtoSelecionado NÃO for nulo, mostra o modal */}
             {produtoSelecionado && (
                 <ProdutoModal
                     produto={produtoSelecionado}
