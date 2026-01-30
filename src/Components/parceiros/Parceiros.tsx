@@ -7,7 +7,6 @@ const Parceiros: FunctionComponent = () => {
         <>
             <div className={styles.ParceiroContainer}>
 
-
                 <div
                     className={styles.BlocoParceiro}
                     style={{ backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%), url(${FundoParceiros})` }}

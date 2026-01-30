@@ -1,15 +1,14 @@
+
 .CategoriaProdutos {
     width: 100%;
     height: auto;
-}
-
-.CategoriaProdutos {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     gap: 60px;
-    padding-top: 40px;
+    padding: 40px 20px;
+
 }
 
 .CaixaCategoriaItem,
